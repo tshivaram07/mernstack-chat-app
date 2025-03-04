@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    width: 0px;
+    /* Removes scrollbar */
+    height: 0px;
+    display: none;
+}
+
+/* Optional: Hide scrollbar for Firefox */
+html {
+    scrollbar-width: none;
+    /* Hides scrollbar but allows scrolling */
+}
+
+/* Optional: Hide scrollbar for Internet Explorer & Edge */
+body {
+    -ms-overflow-style: none;
+    /* Hides scrollbar but allows scrolling */
+}
+
+
+/* see the search function once more  */
