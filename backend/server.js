@@ -11,6 +11,7 @@ const chatRoutes=require("./routes/chatRoutes")
 connectdb();
 app.use(cors());
 app.use(express.json()); 
+const PORT = process.env.PORT || 3000;
 app.get("/",(req,res)=>{
   res.send("Api successfully running");
 })
@@ -35,7 +36,7 @@ app.use((err, req, res, next) => {
 });
 
 
-const server=app.listen(3000, () => console.log("Server started on port 3000"));
+const server=app.listen(PORT ,() => console.log("Server started on port 3000"));
 const io=require("socket.io") (server,{
     pingTimeout:60000,
     cors:{
